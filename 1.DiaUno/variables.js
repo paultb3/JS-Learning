@@ -18,6 +18,7 @@ let b = 10,
     x = a + b;
 
 const permanente = d + x;
+console.log(x);
 
 
 
