@@ -1,0 +1,1 @@
+let miAlert = "Bienvenido svandija";
