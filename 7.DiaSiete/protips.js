@@ -36,25 +36,15 @@ const tony = {
     nombre : 'Toni Stark',
     codeNAme : 'Ironman',
     edad : 40,
-    coords :{
-        lat:34.034,
-        lng : -118.70,
-    },
-    trajes : ['MArk I', 'MArk II', 'Mark III'],
-    direccion:{
-        zip: '1080 9026',
-        ubicacion: 'hawai autralia',
-
-    },
-    'ultima-pelicula': 'INfinity war'
+    trajes : ['MArk I', 'MArk II', 'Mark III']
 }
 
 //ultimo pro tip, para propiedades
-const imprimerPersonaje = ({nombre, codeNAme, edad,trajes}) =>{
-    console.log(nombre);
-    console.log(codeNAme);
-    console.log(edad);
-    console.log(trajes);
+const imprimerPersonaje = ({nombre, codeNAme, edad = 15 ,trajes}) =>{
+    console.log({nombre});
+    console.log({codeNAme});
+    console.log({edad});
+    console.log({trajes});
 }
 
 imprimerPersonaje(tony)
