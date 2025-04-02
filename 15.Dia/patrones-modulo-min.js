@@ -1,0 +1,1 @@
+(()=>{"use strict";const o=["Iron-Man","Hulk","Spider-Man"];console.log(o);for(const e of o)"Hulk"===e&&console.log("es grande, verde y fuerte")})();
