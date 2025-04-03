@@ -2,15 +2,19 @@ class Person{
     //Es opscional incializar los atributtos, se puede hacer defrente en el constructor
    
     static _conteo =0;
+
     static get conteo(){
-        return Person._conteo + 'instancias';
+        return Person._conteo + ' Instacias';
     }
-   
+
+    static mensaje(){
+        console.log('este mensaje pertenece a un metodo estatico');
+    }
+
     name = '' ;
     age = 0;
     address = '';
     comida = '';
-    static _conteo = 0;
 
     constructor(name = 'Sin nombre', age = 0, address = 'S/N'){
        
@@ -38,15 +42,17 @@ class Person{
 
 const jhendy = new Person('Jhendy', 19, 'Grifo delta haci el rio');
 const ironMan = new Person('Iron-Man', 31, 'Maiami beach');
+const vane = new Person('Vane',30, 'Los vilccos');
 
 //Un set no es un metodo es como una propiedad
-console.log(jhendy);
 jhendy.setComidaFavorita = "Chaufita con Atún";
 
 //Agregar un atributo de esta forma no es recomendable en JS al usar POO
 jhendy.nemesis ='Crespito';
 
-console.log(jhendy.getComidaFavorita);
 console.log(Person._conteo);
-console.log('estatico');
-console.log(Person.conteo);
+console.log(Person.mensaje());
+
+Person.propiedadExterna = 'Hola mundo';
+console.log(Person.propiedadExterna);
+console.log(Person);
